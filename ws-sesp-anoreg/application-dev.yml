@@ -6,7 +6,7 @@ server:
     context-path: /ws-sesp-anoreg
 spring:
   application:
-    name: anoreg-service
+    name: ws-sesp-anoreg
 management:
   endpoints:
     web:
