@@ -1,7 +1,7 @@
 server:
   port: 8080
-#  servlet:
-#    context-path: /ws-sesp-anoreg
+  servlet:
+    context-path: /ws-sesp-anoreg
 spring:
   application:
     name: anoreg-service
