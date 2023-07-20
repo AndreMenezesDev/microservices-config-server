@@ -1,19 +1,2 @@
 server:
   port: 8080
-  servlet:
-    context-path: /unknow
-spring:
-  application:
-    name: unknow
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - '*'
-openapi:
-  service:
-    title: Unknow API #title that you will want to display in the swagger ui
-    version: 1.0.0 
-    description: Unknow
-    url: http://localhost:8080 #api gateway url
