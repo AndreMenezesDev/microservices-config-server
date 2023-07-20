@@ -1,4 +1,6 @@
 server:
+  http2:
+    enabled: true
   port: 8080
   servlet:
     context-path: /ws-sesp-anoreg
@@ -16,4 +18,4 @@ openapi:
     title: Anoreg service API #title that you will want to display in the swagger ui
     version: 1.0.0 
     description: Documentacao da API de integração com Anoreg (importe link acima via Postman para teste)
-    url: http://localhost:8080${server.servlet.context-path} #api gateway url
+    url: https://dev2.seguranca.local${server.servlet.context-path} #api gateway url
