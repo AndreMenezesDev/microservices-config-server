@@ -16,4 +16,4 @@ openapi:
     title: Anoreg service API #title that you will want to display in the swagger ui
     version: 1.0.0 
     description: Documentacao da API de integração com Anoreg (importe link acima via Postman para teste)
-    url: http://localhost:8080${server.servlet.context-path} #api gateway url
+    url: http://localhost:8080 #api gateway url
