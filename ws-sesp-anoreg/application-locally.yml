@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: ws-sesp-anoreg
+  config:
+    import: 
+      - optional:http://localhost:8888/
 management:
   endpoints:
     web:
