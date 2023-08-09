@@ -1,3 +1,5 @@
+server:
+  port: ${PORT:8765}
 keycloack-config:
   url-server: https://dev2.sesp.mt.gov.br
   realm: SESP
