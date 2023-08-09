@@ -5,8 +5,10 @@ keycloack-config:
   client-secret: 4Mh6ENzuWV90cRLctgJGDZeCHzqMDF4n
   redirect-uri: /login/oauth2/code/keycloak
 
+#service-discovery-config:
+#  url-server: https://dev2.sesp.mt.gov.br/ws-sesp-service-discovery
 service-discovery-config:
-  url-server: https://dev2.sesp.mt.gov.br/ws-sesp-service-discovery
+  url-server: http://localhost:8761
 
 gateway-config:
   url-server: http://localhost:8765
