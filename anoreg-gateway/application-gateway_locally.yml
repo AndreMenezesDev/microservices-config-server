@@ -1,0 +1,33 @@
+keycloack-config:
+  url-server: https://dev2.sesp.mt.gov.br
+  realm: SESP
+  client-id: anoreg-api
+  client-secret: 4Mh6ENzuWV90cRLctgJGDZeCHzqMDF4n
+  redirect-uri: /login/oauth2/code/keycloak
+
+service-discovery-config:
+  url-server: https://dev2.sesp.mt.gov.br/ws-sesp-service-discovery
+
+gateway-config:
+  url-server: http://localhost:8765
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - actuator
+          - info
+          - refresh
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${service-discovery-config.url-server}/eureka
+
+config:
+  key: ANGB63EBB61DBCFE7
+  secret: f30828c97a23c6d422cb7325079f2d57aca6235c
+openapi:
+  service:
+    url: http://localhost:8080 #api gateway local
