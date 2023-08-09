@@ -11,22 +11,6 @@ service-discovery-config:
 gateway-config:
   url-server: http://localhost:8765
 
-spring:
-  security:
-    oauth2:
-      client:
-        provider:
-          my-keycloak-provider:
-            issuer-uri: ${keycloack-config.url-server}/auth/realms/${keycloack-config.realm}
-        registration:
-          keycloak-spring-gateway-client:
-            provider: my-keycloak-provider
-            scope: openid
-            client-id: ${keycloack-config.client-id}
-            client-secret: ${keycloack-config.client-secret}
-            authorization-grant-type: authorization_code
-            redirect-uri:  ${gateway-config.url-server}${keycloack-config.redirect-uri}
-
 management:
   endpoints:
     web:
